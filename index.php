@@ -1,76 +1,38 @@
 <!DOCTYPE html>
-</html><html>
-
+<html>
     <head>
-        <meta charset="utf-8">
-        <meta http-equiv="X-UA-Compatible" content="IE=edge">
-        <meta name="viewport" content="width=device-width, initial-scale=1">
-        <meta name="description" content="">
-        <meta name="author" content="">
-        <title>Online loan WEb application</title>
-        <!-- Bootstrap and core CSS -->
-        <link href="css/bootstrap.min.css" rel="stylesheet">
-        <link href="css/style.css" rel="stylesheet">
+      <?php require_once 'templates/header.php';?>
     </head>
 <body>
     <!--Header-->
-  <section id="fixednav">
-      <div class="container">
-        <div class="masthead clearfix">
-                <div class="inner">
-                  <h1 class="masthead-brand">E-loan</h1>
-                  <nav class="nav nav-masthead">
-                    <a class="nav-link active" href="#">Home</a>
-                    <a class="nav-link" href="#">Loans</a>
-                    <a class="nav-link" href="#">Contact</a>
-                    <a class="nav-link" href="#">About Us</a>
-                  </nav>
-                </div>
-              </div>
-            </div>
-    <div class="jumbotron" id="nobg">
-            
-        <div class="container"id="paragraph" >
-            <h1>HEY, Apply Loan Here It's Easy and Fast</h1>
-            <p>WE make your life easier by Simplifying the Process of Applying
-                 for a loan like never before,<br>
-                Just register by Giving Us your Vaild info ,
-                 Then you will be able to apply for a loan
-                 <br>
-                 <span id="bold">Fill the Registration Form Below To Start The Application Now</span>
-            </p>
-            <p><a class="btn btn-secondary btn-lg" href="#" role="button">More Info</a></p>
-        </div>
-      </div>
-</div>
-</section>
+  <?php require_once 'templates/heading.php';?>
 <!--here a registration form starts-->
 <div class="container">
         <div class="row" id="relative">
             <div class="col-md-7">
                 <form action="register.php" method="post" id="fileForm" role="form">
                 <fieldset><legend class="text-center">Valid information is required to register. <span class="req"><small> required *</small></span></legend>
-    
+
                 <div class="form-group">
                 <label for="phonenumber"><span class="req">* </span> Phone Number: </label>
-                        <input required type="text" name="phonenumber" id="phone" class="form-control phone" maxlength="28" onkeyup="validatephone(this);" placeholder="not used for marketing"/> 
+                        <input required type="text" name="phonenumber" id="phone" class="form-control phone" maxlength="28" onkeyup="validatephone(this);" placeholder="not used for marketing"/>
                 </div>
-    
-                <div class="form-group"> 	 
-                    <label for="firstname"><span class="req">* </span> First name: </label>
-                        <input class="form-control" type="text" name="firstname" id = "txt" onkeyup = "Validate(this)" required /> 
-                            <div id="errFirst"></div>    
-                </div>
-    
+
                 <div class="form-group">
-                    <label for="lastname"><span class="req">* </span> Last name: </label> 
-                        <input class="form-control" type="text" name="lastname" id = "txt" onkeyup = "Validate(this)" placeholder="hyphen or single quote OK" required />  
+                    <label for="firstname"><span class="req">* </span> First name: </label>
+                        <input class="form-control" type="text" name="firstname" id = "txt" onkeyup = "Validate(this)" required />
+                            <div id="errFirst"></div>
+                </div>
+
+                <div class="form-group">
+                    <label for="lastname"><span class="req">* </span> Last name: </label>
+                        <input class="form-control" type="text" name="lastname" id = "txt" onkeyup = "Validate(this)" placeholder="hyphen or single quote OK" required />
                             <div id="errLast"></div>
                 </div>
-    
+
                 <div class="form-group">
-                    <label for="email"><span class="req">* </span> Email Address: </label> 
-                        <input class="form-control" required type="text" name="email" id = "email"  onchange="email_validate(this.value);" />   
+                    <label for="email"><span class="req">* </span> Email Address: </label>
+                        <input class="form-control" required type="text" name="email" id = "email"  onchange="email_validate(this.value);" />
                             <div class="status" id="status"></div>
                 </div>
                 <div class="form-group">
@@ -86,12 +48,12 @@
                                     </label>
                                 </div>
                 <div class="form-group">
-                        <label for="lastname"><span class="req">* </span> Street Address: </label> 
-                            <input class="form-control" type="text" name="lastname" id = "txt" onkeyup = "Validate(this)" placeholder="hyphen or single quote OK" required />  
+                        <label for="lastname"><span class="req">* </span> Street Address: </label>
+                            <input class="form-control" type="text" name="lastname" id = "txt" onkeyup = "Validate(this)" placeholder="hyphen or single quote OK" required />
                                 <div id="errLast"></div>
                                 <div class="form-group">
-                                        <label for="lastname"><span class="req">* </span>Region: </label> 
-                                            <input class="form-control" type="text" name="lastname" id = "txt" onkeyup = "Validate(this)" placeholder="hyphen or single quote OK" required />  
+                                        <label for="lastname"><span class="req">* </span>Region: </label>
+                                            <input class="form-control" type="text" name="lastname" id = "txt" onkeyup = "Validate(this)" placeholder="hyphen or single quote OK" required />
                                                 <div id="errLast"></div>
                                     </div>
                     </div>
@@ -107,48 +69,48 @@
                                     <input type="radio" name="gender" value="female" /> Female
                                 </label>
                             </div>
-                            
-               
+
+
                 <div class="form-group">
                     <label for="password"><span class="req">* </span> Password: </label>
                         <input required name="password" type="password" class="form-control inputpass" minlength="4" maxlength="16"  id="pass1" /> </p>
-    
+
                     <label for="password"><span class="req">* </span> Password Confirm: </label>
                         <input required name="password" type="password" class="form-control inputpass" minlength="4" maxlength="16" placeholder="Enter again to validate"  id="pass2" onkeyup="checkPass(); return false;" />
                             <span id="confirmMessage" class="confirmMessage"></span>
                 </div>
-                
-                            
-    
+
+
+
                 <div class="form-group">
-                
+
                     <?php //$date_entered = date('m/d/Y H:i:s'); ?>
                     <input type="hidden" value="<?php //echo $date_entered; ?>" name="dateregistered">
                     <input type="hidden" value="0" name="activate" />
                     <hr>
-    
+
                     <input type="checkbox" required name="terms" onchange="this.setCustomValidity(validity.valueMissing ? 'Please indicate that you accept the Terms and Conditions' : '');" id="field_terms">   <label for="terms">I agree with the <a href="terms.php" title="You may read our terms and conditions by clicking on this link">terms and conditions</a> for Registration.</label><span class="req">* </span>
                 </div>
-    
+
                 <div class="form-group">
                     <input class="btn btn-success" type="submit" name="submit_reg" value="Register">
                 </div>
                           <h5>You will receive an email to complete the registration and validation process. </h5>
                           <h5>Be sure to check your spam folders. </h5>
-     
-    
+
+
                 </fieldset>
                 </form><!-- ends register form -->
-    
+
     <script type="text/javascript">
       document.getElementById("field_terms").setCustomValidity("Please indicate that you accept the Terms and Conditions");
     </script>
             </div><!-- ends col-6 -->
-       
+
                 <div class="col-md-5">
                     <legend class="text-center">For A Registred Member</legend>
             <!--login form starts here -->
-                
+
                             <div class="container"></div>
                             <form class="form-horizontal"  b cnrole="form" method="POST" action="/login">
                                 <div class="row">
@@ -193,7 +155,7 @@
                                     <div class="col-md-6">
                                         <div class="form-control-feedback">
                                             <span class="text-danger align-middle">
-                                            <!-- Put password error message here -->    
+                                            <!-- Put password error message here -->
                                             </span>
                                         </div>
                                     </div>
@@ -221,9 +183,9 @@
                         </div>
                     </body>
                     </html>
-                    
+
                 </div>
-    
+
         </div>
     </div>
 </section>
@@ -248,10 +210,10 @@
 <footer id="footer">
      <!--Container-->
      <div class="continer-fluid" id="footer">
-        
+
                 <!--row-fluids-->
                 <div class="container">
-        
+
                     <!--Contact Form-->
                     <div class="span3" id="span3">
                         <h4>ADDRESS</h4>
@@ -294,5 +256,5 @@
     <script type="text/javscript" src="js/jquery.js"></script>
     <script type="text/javscript" src="js/popper.js"></script>
     <script type="text/javscript" src="js/vendor.js"></script>
-    
+
 </html>
