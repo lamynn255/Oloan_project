@@ -47,20 +47,21 @@
                     <div class="span3" id="span3">
                         <h4>ADDRESS</h4>
                         <ul class="unstyled address">
-                                <!-- <li>
+                               
+                        <li>
+                                <i class="icon-globe"></i>
+                                <strong>Website:</strong> www.ifmso.ac.tz
+                            </li> <li>
                                         <i class="icon-home"></i></strong>Institute Of finance Management<br>
                                     </li>
-                            <li> -->
+                            <li> 
                                 <i class="icon-home"></i></strong>Dar Es Salam<br>Tanzania
                             </li>
                             <li>
                                 <i class="icon-envelope"></i>
                                 <strong>Email: </strong> lvavalai@gmail.com
                             </li>
-                            <li>
-                                <i class="icon-globe"></i>
-                                <strong>Website:</strong> www.ifmso.ac.tz
-                            </li>
+                            
                             <li>
                                 <i class="icon-phone"></i>
                                 <strong>Tel:</strong> +255654028211</li>
