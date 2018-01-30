@@ -47,10 +47,10 @@
                     <div class="span3" id="span3">
                         <h4>ADDRESS</h4>
                         <ul class="unstyled address">
-                                <li>
+                                <!-- <li>
                                         <i class="icon-home"></i></strong>Institute Of finance Management<br>
                                     </li>
-                            <li>
+                            <li> -->
                                 <i class="icon-home"></i></strong>Dar Es Salam<br>Tanzania
                             </li>
                             <li>
