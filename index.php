@@ -1,17 +1,15 @@
 <!DOCTYPE html>
 <html>
     <head>
+
       <?php require_once 'templates/header.php';?>
+
     </head>
 <body>
     <!--Header-->
     <?php require_once 'heading/index_page_header.php';?>
 <!--here a registration form starts-->
 <div class="container">
-
-              
-                    </body>
-                    </html>
 
                 </div>
 
