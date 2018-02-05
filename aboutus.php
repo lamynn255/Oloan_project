@@ -7,22 +7,30 @@
     <!--Header-->
   <?php require_once 'templates/heading.php';?>
 <!--here a registration form starts-->
+<section class="container-fluid">
 <div class="container">
-        <div class="row" id="relative">
-            <div class="col-md-7">
-                
+        <div class="row" id="absolute">
+            <div class="col-md-12">
+
+              <p class="lead">Why Oloan?<br>Online Loan System is the system which provide students to request and get responds of loan in online which make the loan system easy to use and students to get loan ealy than using manual system which cost more time in responding students requests.
+              These can be accomplished by fill up the loan application form and wait for approval
+        from our loan officers and you would have your loan on time</p>
+            </div><!-- ends col-6-->  
+        </div>
+       
+            
+       
     <script type="text/javascript">
       document.getElementById("field_terms").setCustomValidity("Please indicate that you accept the Terms and Conditions");
     </script>
-            </div><!-- ends col-6 -->
+         
                 
-                    </body>
-                    </html>
+ </body>
+</html>
 
-                </div>
+               
 
-        </div>
-    </div>
+  </div>
 </section>
 <section class="container-fluid">
 <hr class="featurette-divider">
