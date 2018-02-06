@@ -22,7 +22,7 @@
             <div class="col-md-12">
 
               <p class="lead">Vision and Mission<br>Vision Statement <br>
-              The Vision of the Institute is to become a world class centre of academic and professional excellence and agent for change in financial studies and related disciplines.
+              The Vision of the Oloan is to become a world class centre of academic and professional excellence and agent for change in financial studies and related disciplines.
               </p>
 
               <p class="lead">Mission Statement <br>
